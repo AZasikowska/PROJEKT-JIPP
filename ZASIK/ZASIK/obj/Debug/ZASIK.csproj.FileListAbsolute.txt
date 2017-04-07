@@ -1,0 +1,9 @@
+c:\users\azasikowska.bcsa\documents\visual studio 2015\Projects\ZASIK\ZASIK\bin\Debug\ZASIK.exe.config
+c:\users\azasikowska.bcsa\documents\visual studio 2015\Projects\ZASIK\ZASIK\bin\Debug\ZASIK.exe
+c:\users\azasikowska.bcsa\documents\visual studio 2015\Projects\ZASIK\ZASIK\bin\Debug\ZASIK.pdb
+c:\users\azasikowska.bcsa\documents\visual studio 2015\Projects\ZASIK\ZASIK\obj\Debug\ZASIK.Form1.resources
+c:\users\azasikowska.bcsa\documents\visual studio 2015\Projects\ZASIK\ZASIK\obj\Debug\ZASIK.Properties.Resources.resources
+c:\users\azasikowska.bcsa\documents\visual studio 2015\Projects\ZASIK\ZASIK\obj\Debug\ZASIK.csproj.GenerateResource.Cache
+c:\users\azasikowska.bcsa\documents\visual studio 2015\Projects\ZASIK\ZASIK\obj\Debug\ZASIK.exe
+c:\users\azasikowska.bcsa\documents\visual studio 2015\Projects\ZASIK\ZASIK\obj\Debug\ZASIK.pdb
+c:\users\azasikowska.bcsa\documents\visual studio 2015\Projects\ZASIK\ZASIK\obj\Debug\ZASIK.Form2.resources
