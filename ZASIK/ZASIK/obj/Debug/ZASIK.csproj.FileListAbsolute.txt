@@ -7,3 +7,15 @@ c:\users\azasikowska.bcsa\documents\visual studio 2015\Projects\ZASIK\ZASIK\obj\
 c:\users\azasikowska.bcsa\documents\visual studio 2015\Projects\ZASIK\ZASIK\obj\Debug\ZASIK.exe
 c:\users\azasikowska.bcsa\documents\visual studio 2015\Projects\ZASIK\ZASIK\obj\Debug\ZASIK.pdb
 c:\users\azasikowska.bcsa\documents\visual studio 2015\Projects\ZASIK\ZASIK\obj\Debug\ZASIK.Form2.resources
+C:\Users\azasikowska.BCSA\Documents\PROJEKT-JIPP\ZASIK\ZASIK\bin\Debug\ZASIK.exe.config
+C:\Users\azasikowska.BCSA\Documents\PROJEKT-JIPP\ZASIK\ZASIK\obj\Debug\ZASIK.exe
+C:\Users\azasikowska.BCSA\Documents\PROJEKT-JIPP\ZASIK\ZASIK\obj\Debug\ZASIK.pdb
+C:\Users\azasikowska.BCSA\Documents\PROJEKT-JIPP\ZASIK\ZASIK\bin\Debug\ZASIK.exe
+C:\Users\azasikowska.BCSA\Documents\PROJEKT-JIPP\ZASIK\ZASIK\bin\Debug\ZASIK.pdb
+C:\Users\azasikowska.BCSA\Documents\PROJEKT-JIPP\ZASIK\ZASIK\obj\Debug\ZASIK.csprojResolveAssemblyReference.cache
+C:\Users\azasikowska.BCSA\Documents\PROJEKT-JIPP\ZASIK\ZASIK\obj\Debug\ZASIK.Form1.resources
+C:\Users\azasikowska.BCSA\Documents\PROJEKT-JIPP\ZASIK\ZASIK\obj\Debug\ZASIK.Form2.resources
+C:\Users\azasikowska.BCSA\Documents\PROJEKT-JIPP\ZASIK\ZASIK\obj\Debug\ZASIK.Properties.Resources.resources
+C:\Users\azasikowska.BCSA\Documents\PROJEKT-JIPP\ZASIK\ZASIK\obj\Debug\ZASIK.csproj.GenerateResource.Cache
+C:\Users\azasikowska.BCSA\Documents\PROJEKT-JIPP\ZASIK\ZASIK\obj\Debug\ZASIK.Form3.resources
+C:\Users\azasikowska.BCSA\Documents\PROJEKT-JIPP\ZASIK\ZASIK\obj\Debug\ZASIK.Form4.resources

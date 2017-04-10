@@ -44,7 +44,7 @@
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.button3);
-            this.panel1.Location = new System.Drawing.Point(531, 73);
+            this.panel1.Location = new System.Drawing.Point(531, 51);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(357, 313);
             this.panel1.TabIndex = 5;
@@ -75,43 +75,43 @@
             this.button3.TabIndex = 3;
             this.button3.Text = "Narysuj swój awatar";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button5
             // 
             this.button5.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.button5.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button5.Location = new System.Drawing.Point(488, 392);
+            this.button5.Location = new System.Drawing.Point(531, 383);
+            this.button5.Margin = new System.Windows.Forms.Padding(2);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(158, 17);
+            this.button5.Size = new System.Drawing.Size(92, 28);
             this.button5.TabIndex = 8;
             this.button5.Text = "Zapisz";
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button6
             // 
-            this.button6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.button6.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.button6.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button6.Location = new System.Drawing.Point(609, 392);
+            this.button6.Location = new System.Drawing.Point(664, 383);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(158, 17);
+            this.button6.Size = new System.Drawing.Size(92, 28);
             this.button6.TabIndex = 9;
             this.button6.Text = "Dalej";
             this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button4
             // 
-            this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.button4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.button4.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button4.Location = new System.Drawing.Point(730, 392);
+            this.button4.Location = new System.Drawing.Point(796, 383);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(158, 17);
+            this.button4.Size = new System.Drawing.Size(92, 28);
             this.button4.TabIndex = 10;
             this.button4.Text = "Zakończ";
             this.button4.UseVisualStyleBackColor = false;
@@ -123,12 +123,13 @@
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox1.Enabled = false;
             this.pictureBox1.Image = global::ZASIK.Properties.Resources.p;
-            this.pictureBox1.Location = new System.Drawing.Point(114, 73);
+            this.pictureBox1.Location = new System.Drawing.Point(112, 51);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(373, 313);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // Form2
             // 

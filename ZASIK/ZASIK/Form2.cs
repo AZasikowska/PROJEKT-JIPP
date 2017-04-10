@@ -40,5 +40,30 @@ namespace ZASIK
         {
             Close();
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            new Form3().Show();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog dialog = new SaveFileDialog();
+            dialog.Filter = "bmp|*.bmp";
+            dialog.ShowDialog();
+           
+            if (dialog.FileName != "")
+                pictureBox1.Image.Save(dialog.FileName);
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
