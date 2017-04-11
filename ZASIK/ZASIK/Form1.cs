@@ -24,7 +24,7 @@ namespace ZASIK
 
         private void button1_Click(object sender, EventArgs e)
         {
-            new Form2().Show();
+            new Logowanie().Show();
         }
 
         private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
@@ -37,9 +37,9 @@ namespace ZASIK
             Close();
         }
 
-        private void zamknijToolStripMenuItem_Click(object sender, EventArgs e)
+        private void zalogujToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            new Form2().Show();
+            new Logowanie().Show();
         }
     }
 }

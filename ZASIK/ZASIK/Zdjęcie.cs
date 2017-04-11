@@ -10,20 +10,20 @@ using System.Windows.Forms;
 
 namespace ZASIK
 {
-    public partial class Form3 : Form
+    public partial class Zdjęcie : Form
     {
         private Graphics g;
         private Point p = Point.Empty;
         private Pen pioro;
 
-        public Form3()
+        public Zdjęcie()
         {
             InitializeComponent();
         }
 
         private void Form3_Load(object sender, EventArgs e)
         {
-            pictureBox1.Image = new Bitmap(400, 400);
+            pictureBox1.Image = new Bitmap(200, 200);
             g = Graphics.FromImage(pictureBox1.Image);
             pioro = new Pen(Color.Black);
         }
@@ -67,6 +67,19 @@ namespace ZASIK
         private void button3_Click(object sender, EventArgs e)
         {
        
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog dialog = new OpenFileDialog();
+            dialog.Filter = "Images | *.jpg";
+            dialog.Multiselect = false;
+            if (dialog.ShowDialog() == DialogResult.OK)
+            {
+
+                pictureBox1.Image = Image.FromFile(dialog.FileName);
+
+            }
         }
     }
 }
