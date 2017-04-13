@@ -18,3 +18,14 @@ C:\Users\azasikowska.BCSA\Documents\PROJEKT-JIPP\ZASIK\ZASIK\obj\Debug\ZASIK.Pro
 C:\Users\azasikowska.BCSA\Documents\PROJEKT-JIPP\ZASIK\ZASIK\obj\Debug\ZASIK.csproj.GenerateResource.Cache
 C:\Users\azasikowska.BCSA\Documents\PROJEKT-JIPP\ZASIK\ZASIK\obj\Debug\ZASIK.Logowanie.resources
 C:\Users\azasikowska.BCSA\Documents\PROJEKT-JIPP\ZASIK\ZASIK\obj\Debug\ZASIK.Zdjęcie.resources
+C:\Users\Aga\Documents\PROJEKT-JIPP\ZASIK\ZASIK\bin\Debug\ZASIK.exe.config
+C:\Users\Aga\Documents\PROJEKT-JIPP\ZASIK\ZASIK\obj\Debug\ZASIK.exe
+C:\Users\Aga\Documents\PROJEKT-JIPP\ZASIK\ZASIK\obj\Debug\ZASIK.pdb
+C:\Users\Aga\Documents\PROJEKT-JIPP\ZASIK\ZASIK\bin\Debug\ZASIK.exe
+C:\Users\Aga\Documents\PROJEKT-JIPP\ZASIK\ZASIK\bin\Debug\ZASIK.pdb
+C:\Users\Aga\Documents\PROJEKT-JIPP\ZASIK\ZASIK\obj\Debug\ZASIK.csprojResolveAssemblyReference.cache
+C:\Users\Aga\Documents\PROJEKT-JIPP\ZASIK\ZASIK\obj\Debug\ZASIK.Form1.resources
+C:\Users\Aga\Documents\PROJEKT-JIPP\ZASIK\ZASIK\obj\Debug\ZASIK.Panel.resources
+C:\Users\Aga\Documents\PROJEKT-JIPP\ZASIK\ZASIK\obj\Debug\ZASIK.Zdjęcie.resources
+C:\Users\Aga\Documents\PROJEKT-JIPP\ZASIK\ZASIK\obj\Debug\ZASIK.Properties.Resources.resources
+C:\Users\Aga\Documents\PROJEKT-JIPP\ZASIK\ZASIK\obj\Debug\ZASIK.csproj.GenerateResource.Cache

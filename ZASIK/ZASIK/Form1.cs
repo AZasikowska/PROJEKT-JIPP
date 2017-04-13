@@ -24,7 +24,7 @@ namespace ZASIK
 
         private void button1_Click(object sender, EventArgs e)
         {
-            new Logowanie().Show();
+            new Zdjęcie().Show();
         }
 
         private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
@@ -39,7 +39,7 @@ namespace ZASIK
 
         private void zalogujToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            new Logowanie().Show();
+            new Zdjęcie().Show();
         }
     }
 }

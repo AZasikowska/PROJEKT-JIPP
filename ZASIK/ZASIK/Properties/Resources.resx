@@ -124,4 +124,7 @@
   <data name="p" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\p.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="UsEr" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\UsEr.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>
