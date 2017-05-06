@@ -10,23 +10,22 @@ using System.Windows.Forms;
 
 namespace ZASIK
 {
-    public partial class Panel : Form
+    public partial class Logowanie : Form
     {
-        public Panel()
+        public Logowanie()
         {
             InitializeComponent();
         }
 
-        private void toolStripStatusLabel1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            new Panel().Show();
+            this.Close();
+        }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new Zdjęcie().Show();
         }
     }
 }

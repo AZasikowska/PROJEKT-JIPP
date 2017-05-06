@@ -125,7 +125,7 @@
             this.button5.TabIndex = 6;
             this.button5.Text = "Dalej";
             this.button5.UseVisualStyleBackColor = false;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.button5.Click += new System.EventHandler(this.btn_tarti_zapisz);
             // 
             // button6
             // 
@@ -163,6 +163,7 @@
 
         #endregion
 
+        public Form1 homePage;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button1;

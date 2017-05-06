@@ -24,7 +24,11 @@ namespace ZASIK
 
         private void button1_Click(object sender, EventArgs e)
         {
-            new Zdjęcie().Show();
+
+            Zdjęcie zdj =  new Zdjęcie(); // tworzę nowy obiekt(panel- zdjęcie)
+            zdj.homePage = this; // przypisuję form1 do nowo utworzonego obiektu zdjecie
+            zdj.Show();
+
         }
 
         private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
@@ -41,5 +45,17 @@ namespace ZASIK
         {
             new Zdjęcie().Show();
         }
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_tarti_click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new Panel().Show();
+
+        }
     }
-}
+    }
+   

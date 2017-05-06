@@ -158,6 +158,7 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.LightCyan;
             this.pictureBox2.Image = global::ZASIK.Properties.Resources.UsEr;
+            //this.pictureBox2.Image = pobierzAvatarZBazy();
             this.pictureBox2.Location = new System.Drawing.Point(698, 31);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(176, 146);
@@ -177,6 +178,7 @@
             this.button2.TabIndex = 11;
             this.button2.Text = "Dodaj ćwiczenie";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.btn_tarti_click);
             // 
             // button3
             // 
@@ -190,6 +192,7 @@
             this.button3.TabIndex = 12;
             this.button3.Text = "Zobacz historię treningów";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form1
             // 
@@ -228,9 +231,17 @@
         private System.Windows.Forms.ToolStripMenuItem opcjeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ZalogujToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem zamknijToolStripMenuItem1;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        public System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
+
+        private void pobierzAvatarZBazy()
+        {
+            
+            //tworze polaczenie z baza
+            //pobieram obrazek
+            //zwracam obrazek lub jezeli nie uda mi sie pobrac, zwracam jakis domyslny
+        }
     }
 }
 

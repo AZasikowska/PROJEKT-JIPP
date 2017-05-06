@@ -84,8 +84,48 @@ namespace ZASIK
 
         private void button5_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            new Panel().Show();
+        }
+
+        private void btn_tarti_zapisz(object sender, EventArgs e)
+        {
+            // pobierz obrazek
+            
+            Button button1 = (Button)sender; // rzutowanie, by określić konkretny obiekt "by mieć więcej możliwości"
+            Image addedImage = this.pictureBox1.Image;//Tworzę nowy obiekt przypisujący zdjęcie
+
+
+            //Wrzucam do bazy danych
+            String hostname;
+            String username;
+            String password;
+            string databaseName;
+            /*
+            Connection conn = mydsqlDatabaseSource(hostname, username, password, databaseName);
+
+            
+            ResultSet rs = conn.query("Select * from users");
+            Row row;
+            while((row = rs.next()) != null)
+            {
+                row["id"];
+                row["name"];
+                row["username"];
+                row["status"];
+
+            }
+            
+
+            conn.query(Insert into databaseName values("id", "name", "username", "status") ("1", "Kamil", "Tarti", "Wolny"));
+
+            conn.close();
+            //wyświetl obrazek na Form1
+            this.homePage.pictureBox2.Image = addedImage;
+            this.Close();
+            */
+            // zapisz go w bazie danych
+            // ukryj lub wylacz ten widok
+            // pokaz glowny widok
+            // zupdajtuj obrazek
         }
     }
 }
