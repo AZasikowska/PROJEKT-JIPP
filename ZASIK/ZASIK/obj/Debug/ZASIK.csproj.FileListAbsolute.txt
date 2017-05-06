@@ -29,3 +29,4 @@ C:\Users\Aga\Documents\PROJEKT-JIPP\ZASIK\ZASIK\obj\Debug\ZASIK.Panel.resources
 C:\Users\Aga\Documents\PROJEKT-JIPP\ZASIK\ZASIK\obj\Debug\ZASIK.Zdjęcie.resources
 C:\Users\Aga\Documents\PROJEKT-JIPP\ZASIK\ZASIK\obj\Debug\ZASIK.Properties.Resources.resources
 C:\Users\Aga\Documents\PROJEKT-JIPP\ZASIK\ZASIK\obj\Debug\ZASIK.csproj.GenerateResource.Cache
+C:\Users\Aga\Documents\PROJEKT-JIPP\ZASIK\ZASIK\obj\Debug\ZASIK.Logowanie.resources

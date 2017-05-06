@@ -95,10 +95,10 @@ namespace ZASIK
 
 
             //Wrzucam do bazy danych
-            String hostname;
-            String username;
-            String password;
-            string databaseName;
+            //String hostname;
+            //String username;
+            //String password;
+            //string databaseName;
             /*
             Connection conn = mydsqlDatabaseSource(hostname, username, password, databaseName);
 

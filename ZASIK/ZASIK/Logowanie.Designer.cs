@@ -107,6 +107,7 @@
             this.MaximizeBox = false;
             this.Name = "Logowanie";
             this.Text = "Logowanie";
+            this.Load += new System.EventHandler(this.Logowanie_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

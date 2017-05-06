@@ -158,7 +158,6 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.LightCyan;
             this.pictureBox2.Image = global::ZASIK.Properties.Resources.UsEr;
-            //this.pictureBox2.Image = pobierzAvatarZBazy();
             this.pictureBox2.Location = new System.Drawing.Point(698, 31);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(176, 146);
@@ -211,6 +210,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
