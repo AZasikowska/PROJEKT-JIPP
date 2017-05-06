@@ -110,7 +110,7 @@
     <None Include="Resources\6.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\p.jpg" />
+    <None Include="Properties\p.jpg" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\UsEr.png" />
