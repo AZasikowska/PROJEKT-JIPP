@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,6 +13,8 @@ namespace ZASIK
 {
     public partial class Form1 : Form
     {
+        
+
         public Form1()
         {
             InitializeComponent();
@@ -24,10 +27,14 @@ namespace ZASIK
 
         private void button1_Click(object sender, EventArgs e)
         {
-
-            Zdjęcie zdj =  new Zdjęcie(); // tworzę nowy obiekt(panel- zdjęcie)
+            Zdjęcie zdj = new Zdjęcie(); // tworzę nowy obiekt(panel- zdjęcie)
             zdj.homePage = this; // przypisuję form1 do nowo utworzonego obiektu zdjecie
             zdj.Show();
+            
+        }
+        private void button3_Click(object sender, EventArgs e)
+        {
+          
 
         }
 
@@ -50,7 +57,7 @@ namespace ZASIK
 
         }
 
-        private void btn_tarti_click(object sender, EventArgs e)
+        private void button2_click(object sender, EventArgs e)
         {
             this.Hide();
             new Panel().Show();
@@ -61,6 +68,26 @@ namespace ZASIK
         {
 
         }
+
+        private void timer_Tick(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void Form1_Paint(object sender, PaintEventArgs e)
+        {
+            e.Graphics.FillRectangle(Brushes.Gray, 576, 507, 116, 15);
+            e.Graphics.DrawString("Agnieszka Zasikowska", this.Font, Brushes.Black, 576, 507);
+            
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            new Cwiczenia().Show();
+            this.Hide();
+        }
     }
     }
+   
+    
    

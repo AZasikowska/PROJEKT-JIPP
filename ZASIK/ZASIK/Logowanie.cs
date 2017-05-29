@@ -20,45 +20,46 @@ namespace ZASIK
 
         private void button1_Click(object sender, EventArgs e)
         {
+            Task.WaitAll();
             this.Close();
         }
 
-        string connectionString = "server= NT-27.WWSI.EDU.pl,1601; database=KASETY_404_20; user=Z404_20; password=Z404_20"; // server - hostname 
+        string connectionString = "server= NT-27.WWSI.EDU.pl,1601; database=KASETY_404_20; user=Z404_20; password=Z404_20";  
 
         private void button2_Click(object sender, EventArgs e) 
-        {        
-
-            using (SqlConnection connection= new SqlConnection(connectionString))// nowe połączenie 
+        {
+            using (SqlConnection connection = new SqlConnection(connectionString))
             {
 
-                SqlCommand command = new SqlCommand(); // Konstruktor to po słowie NEW! , tworzę obiekt, który tworzy komendy
-                SqlDataReader reader; 
+                SqlCommand command = new SqlCommand();
+                SqlDataReader reader;
 
-                command.CommandText = "SELECT * from  [KASETY_404_20].[Z404_20].[Users];";
-                command.CommandType = CommandType.Text; 
-                command.Connection = connection; // moja komenda z moją bazą danych (połączenie)
+                command.CommandText = "SELECT * from  [KASETY_404_20].[Z404_20].[Users] ;";
+                command.CommandType = CommandType.Text;
+                command.Connection = connection;
 
-                connection.Open(); // konkretny typ 
-                reader = command.ExecuteReader(); // konkretna komenda 
+                connection.Open();
+                reader = command.ExecuteReader();
                 if (connection.State == ConnectionState.Open)
                 {
 
-                    String name;
+                    String login;
                     String haslo;
                     while (reader.Read())
                     {
-                        name = reader.GetValue(1).ToString();
+                        login = reader.GetValue(1).ToString();
                         haslo = reader.GetValue(2).ToString();
-                        if (this.textBox1.Text == name && this.textBox2.Text == haslo) // Jeśli się zgadza z bazą (przeszukanie)
-                        {
 
-                            this.Hide();
-                            new Form1().Show();
+                        if (this.textBox1.Text == login && this.textBox2.Text == haslo)
+                        {
+                            progressBar1.Visible = true;
+                            label4.Text = string.Format("Logowanie..");
+                            timer1.Start();
                         }
 
                         else
                         {
-                            label3.Text = "Bad login or password";
+                            label3.Text = "Nieprawidłowy login lub hasło!";
                         }
                     }
 
@@ -67,9 +68,23 @@ namespace ZASIK
             }
         }
 
-        private void Logowanie_Load(object sender, EventArgs e)
+
+
+
+        private void timer1_Tick(object sender, EventArgs e)
         {
+            progressBar1.Value = Convert.ToInt32(progressBar1.Value) + 15;
+            if (Convert.ToInt32(progressBar1.Value) > 85)
+
+            {
+                timer1.Stop();
+                new Form1().Show();
+                this.Hide();
+            }
+
 
         }
+
+
     }
 }

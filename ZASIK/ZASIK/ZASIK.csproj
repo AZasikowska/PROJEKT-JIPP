@@ -45,23 +45,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cwiczenia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cwiczenia.Designer.cs">
+      <DependentUpon>Cwiczenia.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="KASETY_404_20DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KASETY_404_20DataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Logowanie.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Logowanie.Designer.cs">
       <DependentUpon>Logowanie.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Panel.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Panel.Designer.cs">
-      <DependentUpon>Panel.cs</DependentUpon>
     </Compile>
     <Compile Include="Zdjęcie.cs">
       <SubType>Form</SubType>
@@ -71,14 +76,14 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Cwiczenia.resx">
+      <DependentUpon>Cwiczenia.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Logowanie.resx">
       <DependentUpon>Logowanie.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Panel.resx">
-      <DependentUpon>Panel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Zdjęcie.resx">
       <DependentUpon>Zdjęcie.cs</DependentUpon>
@@ -93,6 +98,17 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="KASETY_404_20DataSet.xsc">
+      <DependentUpon>KASETY_404_20DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="KASETY_404_20DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KASETY_404_20DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KASETY_404_20DataSet.xss">
+      <DependentUpon>KASETY_404_20DataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -114,6 +130,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\UsEr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

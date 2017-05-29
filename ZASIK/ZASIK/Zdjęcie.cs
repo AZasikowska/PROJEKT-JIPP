@@ -28,10 +28,7 @@ namespace ZASIK
             pioro = new Pen(Color.Black);
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
+     
 
         private void pictureBox1_MouseDown(object sender, MouseEventArgs e)
         {
@@ -66,13 +63,24 @@ namespace ZASIK
 
         private void button3_Click(object sender, EventArgs e)
         {
-       
-        }
 
+            Bitmap sepiaEffect = (Bitmap)pictureBox1.Image.Clone();
+            for (int yCoordinate = 0; yCoordinate < sepiaEffect.Height; yCoordinate++)
+            {
+                for (int xCoordinate = 0; xCoordinate < sepiaEffect.Width; xCoordinate++)
+                {
+                    Color color = sepiaEffect.GetPixel(xCoordinate, yCoordinate);
+                    double grayColor = ((double)(color.R + color.G + color.B)) / 3.0d;
+                    Color sepia = Color.FromArgb((byte)grayColor, (byte)(grayColor * 0.95), (byte)(grayColor * 0.82));
+                    sepiaEffect.SetPixel(xCoordinate, yCoordinate, sepia);
+                }
+                pictureBox1.Image = sepiaEffect;
+            }
+        }
         private void button4_Click(object sender, EventArgs e)
         {
             OpenFileDialog dialog = new OpenFileDialog();
-            dialog.Filter = "Images | *.jpg";
+            dialog.Filter = "Images | *.jpg; *.png";
             dialog.Multiselect = false;
             if (dialog.ShowDialog() == DialogResult.OK)
             {
@@ -82,50 +90,17 @@ namespace ZASIK
             }
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void button6_Click(object sender, EventArgs e)
         {
+            this.Close();
         }
 
-        private void btn_tarti_zapisz(object sender, EventArgs e)
+        private void button5_Click(object sender, EventArgs e)
         {
-            // pobierz obrazek
-            
-            Button button1 = (Button)sender; // rzutowanie, by określić konkretny obiekt "by mieć więcej możliwości"
-            Image addedImage = this.pictureBox1.Image;//Tworzę nowy obiekt przypisujący zdjęcie
-
-
-            //Wrzucam do bazy danych
-            //String hostname;
-            //String username;
-            //String password;
-            //string databaseName;
-            /*
-            Connection conn = mydsqlDatabaseSource(hostname, username, password, databaseName);
-
-            
-            ResultSet rs = conn.query("Select * from users");
-            Row row;
-            while((row = rs.next()) != null)
-            {
-                row["id"];
-                row["name"];
-                row["username"];
-                row["status"];
-
-            }
-            
-
-            conn.query(Insert into databaseName values("id", "name", "username", "status") ("1", "Kamil", "Tarti", "Wolny"));
-
-            conn.close();
-            //wyświetl obrazek na Form1
+            Button button1 = (Button)sender;
+            Image addedImage = this.pictureBox1.Image;
             this.homePage.pictureBox2.Image = addedImage;
             this.Close();
-            */
-            // zapisz go w bazie danych
-            // ukryj lub wylacz ten widok
-            // pokaz glowny widok
-            // zupdajtuj obrazek
         }
     }
 }
